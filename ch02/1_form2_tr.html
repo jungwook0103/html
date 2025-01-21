@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        td {
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <form method="post" action="">
         <b>연락처 추가</b>
-        <hr>
+        <hr color="grey">
         <table>
             <tr>                
                 <td><img src="/ch01/image/sign.png"></td>
@@ -45,11 +51,16 @@
             </tr>
             <tr>
                 <td></td>
-                <td><textarea name="" id="" style="color: grey; width: 340px;">주소</textarea></td>
+                <td><textarea name="" id="" style="color: grey; width: 340px; overflow-y: scroll; resize: none;" >주소</textarea></td>
             </tr>
             <tr>
                 <td><b>홈페이지</b></td>
-                <td></td>
+                <td><input type="text" placeholder="http://" size="44px"></td>
+                <td><button type="button"><span style="color: grey;">+</span></button></td>
+            </tr>
+            <tr>
+                <td><b>메모</b></td>
+                <td><textarea name="" id="" style="color: grey; width: 340px; overflow-y: scroll; resize: none;" >메모(최대 1,000자)</textarea></td>
             </tr>
         </table>
 
