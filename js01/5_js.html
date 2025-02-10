@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var sum = 0;
+        for (let i = 1; i <= 10; ++i) {
+            sum += i;
+        }
+        alert(sum);
+
+        // for (let i = 2; i <= 9; ++i) {
+        //     for (let j = 1; j <= 9; ++j) {
+        //         console.log(i + " * " + j + " = " + i * j);
+        //     }
+        //     console.log("-------------------");
+        // }
+
+        for (let i = 2; i <= 2; ++i) {
+            for (let j = 1; j <= 9; ++j) {
+                if(j % 2 == 0) {
+                    console.log(i + " * " + j + " = " + i * j);
+                }
+            }
+            console.log("-------------------");
+        }
+        
+        var star = "*";
+        for(let i = 1; i <= 5; ++i) {
+            console.log(star + i);
+            star += "*";
+        }
+        console.log("-------------------");
+        
+        var star1 = "*";
+        for(let i = 1; i <= 5; ++i) {
+            let blank = "";
+            for(let j = i; j <= 5; ++j) {
+                blank += " ";
+            }
+            console.log(blank + star1);
+             star1 += "**";
+        }
+        console.log("-------------------");
+
+        var star = "*";
+        for(let i = 1; i <= 5; ++i) {
+            let blank = "";
+            for(let j = 0; j < 5-i; ++j) {
+                blank += " ";
+            }
+            console.log(blank + star);
+            star += "*";
+        }
+    </script>
+</body>
+</html>

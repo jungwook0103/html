@@ -15,16 +15,64 @@
         }
 
         var engScore = 95;
-        if (engScore >= 90) {
-            alert('a');
+        if (engScore >= 90 && engScore <= 100) {
+            if(engScore >= 97) {
+                alert("a+");
+            } else if(engScore >= 94) {
+                alert("a0");
+            } else {
+                alert("a-");
+            } 
+
         } else if (engScore >= 80) {
-            alert('b');
+            if(engScore >= 87) {
+                alert("b+");
+            } else if(engScore >= 84) {
+                alert("b0");
+            } else {
+                alert("b-");
+            }
         } else if (engScore >= 70) {
-            alert('c');
+            if(engScore >= 77) {
+                alert("c+");
+            } else if(engScore >= 74) {
+                alert("c0");
+            } else {
+                alert("c-");
+            }
         } else if (engScore >= 60) {
-            alert('d')
+            if(engScore >= 67) {
+                alert("d+");
+            } else if(engScore >= 64) {
+                alert("d0");
+            } else {
+                alert("d-");
+            }
         } else {
             alert('f');
+        }
+
+        var x = -10;
+        var y = 5;
+        
+        if (x == 0 && y == 0) {
+            alert("원점입니다.");
+        } else if (x == 0 && y != 0) {
+            alert("y축 위의 점입니다.");
+        } else if (x != 0 && y == 0) {
+            alert("x축 위의 점입니다.");
+        } else if (x > 0) {
+            if (y > 0) {
+                alert("1사분면 위의 점입니다.");
+            } else {
+                alert("4사분면 위의 점입니다.")
+            }
+        } else {
+            if (y > 0) {
+                alert("2사분면 위의 점입니다.");
+            } else {
+                alert("3사분면 위의 점입니다.");
+            }
         }
     </script>
 </body>
